@@ -1,0 +1,11 @@
+normal package:
+
+as we see both motorcycle class and car class extends the same vehicle class and functionality of both are same so it is basically the code duplicacy and this will increase as the number of objects extending vehicle class increases.
+ public void drive(){
+        System.out.println("driving fast vehicle");
+    }
+
+
+ to solve this problem we use strategy design pattern so basically what we do in this code is we made an interface drive which will handle the drive function for various vehicles.
+
+
