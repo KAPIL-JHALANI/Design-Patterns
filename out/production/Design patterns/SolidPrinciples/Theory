@@ -1,0 +1,78 @@
+SOLID PRINCIPLES:
+
+1> S -> single responsibility principle
+A class should have only one reason to change.
+EG:
+Class A{
+
+	cal(){
+}
+savedb(){
+}
+printval(){
+}
+
+}
+
+Here we have three reasons to change because we have three functions and if we need to update any one of them we need to update the whole class.
+
+So we can need to modify this class according to single responsibility principle
+
+Class A{
+	cal(){
+}
+}
+
+Class save{
+savedb(){
+}
+}
+Class print{
+printval(){
+}
+}
+
+2> Open/Closed principle
+Open for Extension but Closed for Modification
+
+So this principle just states that a class ust be open for extending another class but do not open for modification of the current class.
+
+Basic example is we may use interface and extends this interface according to out use.
+
+
+
+
+Interface dao(){
+	Public void save();
+ }
+
+Class dbsave implements dao{
+	Public void save(){
+		//Save to db;
+}
+}
+Class filesave implements dao{
+	Public void save(){
+		//Save to file;
+}
+}
+
+
+3: Liskov Substitution Principle
+         If class B is subtype of class A, then we should be able to replace the object of class A with
+        B without breaking the behaviour of program.
+
+Subclass should extend capability of parent class not narrow it down.
+
+
+4.Interface Segmented Principle
+
+Interfaces should be such, the client should not implement unnecessary functions they do not need.
+
+Eg: divide the interface according to our use.
+
+
+
+5.Dependency Inversion Principle
+
+Class should be depend  on interfaces rather then concrete class.

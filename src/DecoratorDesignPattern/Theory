@@ -1,0 +1,7 @@
+So we have base layer have we have to decorate one by one above layers with the count of below layers we may use decorator patter.
+
+best example is pizza shop.
+where we first choose the base and then add layers of toppings one by one;
+
+
+Decorator used both is-a and has-a relatioship.
