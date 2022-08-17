@@ -1,0 +1,12 @@
+Factory design pattern:
+
+So we design one factory which will handle the internal working like which object to return for the user and user do nt have access to direct objects.
+
+Abstract Factory Patter:
+
+This is like factory of factories
+
+user-> factory1 ->factory2 -> return the particular obejct
+
+
+

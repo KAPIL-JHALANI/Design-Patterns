@@ -2,6 +2,8 @@ import DecoratorDesignPattern.Base.Margerita;
 import DecoratorDesignPattern.Base.Pizza;
 import DecoratorDesignPattern.Decorator.Jalpino;
 import DecoratorDesignPattern.Decorator.Paneer;
+import FactoryDesignPattern.Shape;
+import FactoryDesignPattern.ShapeFactory;
 import ObservableDesignPattern.Observable.IphoneObservaleImple;
 import ObservableDesignPattern.Observable.StockObservable;
 import ObservableDesignPattern.Observer.EmailAlertObserverImple;
@@ -10,6 +12,9 @@ import ObservableDesignPattern.Observer.NotificationAlertObserver;
 
 public class Pattern {
     public static void main(String[]args){
+
+        //Observable design pattern
+
 
 //        StockObservable iphone=new IphoneObservaleImple();
 //        NotificationAlertObserver observer=new EmailAlertObserverImple("jhalani@gmail.com",iphone);
@@ -42,6 +47,14 @@ public class Pattern {
         int cost1= jalpinoandpanner.cost(); // this gives total of panner+jalpino+base
 
         System.out.println(cost1);
+
+
+        //factoryDesignPattern
+        ShapeFactory shapeFactory=new ShapeFactory();
+        Shape shape=shapeFactory.getshape("Rectangle");
+        shape.draw();
+
+
 
 
 
